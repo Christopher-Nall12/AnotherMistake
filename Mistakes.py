@@ -18,3 +18,10 @@ print(lastFirst)
 
 print("whyyy"*20)
 print("o"*20)
+
+def rowYourBoat():
+    print("row"*3 + " your boat")
+    print("gently down the stream")
+    print("merrily"*4 + " life is but a dream")
+
+rowYourBoat()
