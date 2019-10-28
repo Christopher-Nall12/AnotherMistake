@@ -85,3 +85,10 @@ string.center(5, Mine)
 print(string.center(5, Mine))
 
 print(str.ljust(Mine, 5, notYours))
+
+# Character Functions
+# All Characters have a value, a numeric value.
+
+print(ord('a'))
+print(ord('b'))
+print(chr(104))
