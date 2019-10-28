@@ -80,11 +80,12 @@ notYours = " mine"
 print(Mine + notYours)
 string = (Mine + notYours)
 
-print(string)
-string.center(5, Mine)
-print(string.center(5, Mine))
 
-print(str.ljust(Mine, 5, notYours))
+print(string)
+
+
+
+
 
 # Character Functions
 # All Characters have a value, a numeric value.
@@ -92,3 +93,6 @@ print(str.ljust(Mine, 5, notYours))
 print(ord('a'))
 print(ord('b'))
 print(chr(104))
+print(chr(20))
+print(chr(75))
+print(ord('J'))
