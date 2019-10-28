@@ -84,6 +84,11 @@ string = (Mine + notYours)
 print(string)
 
 
+print(string)
+string.center(5, Mine)
+print(string.center(5, Mine))
+
+print(str.ljust(Mine, 5, notYours))
 
 
 
