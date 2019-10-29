@@ -15,5 +15,17 @@ def scrambleToEncrypt(plaintext):
     cipherText = oddChar + evenChar
     return cipherText
 
-from mistakes2 import *
+def scrambleToDecrypt(cipherText):
+    halflength = len(cipherText) // 2
+    evenChar = cipherText[halflength:]    # halflength to the end
+    oddChar = cipherText[halflength]      # 0 to the halflength - 1
+    plainText = ""
 
+    for i in range(halflength):
+        plainText = plainText + evenChar[i]
+        plainText = plainText + oddChar[i]
+
+    if len(oddChar) < len(evenChar):
+        plainText = plainText + evenChar[-1]
+
+    return plainText
