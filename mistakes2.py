@@ -24,5 +24,5 @@ def indexToLetter(idx):
 from Crypto import *
 
 print(scrambleToEncrypt("The Meeting is at five oclock"))
+print(scrambleToDecrypt("h etn sa ieolcTeMeigi tfv cok"))
 
-from Crypto import *
