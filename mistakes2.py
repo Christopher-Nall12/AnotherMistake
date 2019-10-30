@@ -26,3 +26,29 @@ from Crypto import *
 print(scrambleToEncrypt("The Meeting is at five oclock"))
 print(scrambleToDecrypt("h etn sa ieolcTeMeigi tfv cok"))
 
+
+
+# write an cesarEncrypt(plainText, shift)
+# write an cesarDecrypt(plainText, shift)
+
+
+def encryptMessage():
+    mg = input("enter your message here to encrypt: ")
+    cypherText = scrambleToEncrypt(mg)
+    print("the encrypted message is:", cypherText)
+
+print(encryptMessage())
+
+def cesarEncrypt():
+    input("Message:")
+    if "a" :print("c")
+    :
+        if "b" :print("f")
+        else:
+            if "c" :print("e")
+            else:
+                if "b" :print("f")
+                else:
+                    if "c" :print("g")
+
+print(cesarEncrypt())
