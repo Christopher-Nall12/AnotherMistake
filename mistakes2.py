@@ -52,13 +52,13 @@ print(cesarEncrypt())
 
 
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz "
 
 def cesar(word):
     encypt = ""
     for ch in word:
         Letters = alphabet.find(ch)
-        nextLetters = (Letters + 3) % 26
+        nextLetters = (Letters + 3) % 53
         encypt += alphabet[nextLetters]
     return encypt
 
@@ -70,8 +70,8 @@ def decrypt(encypt):
     decypt = ""
     for ch in encypt:
         Letters = alphabet.find(ch)
-        pastLetters = (Letters -3) % 26
+        pastLetters = (Letters -3) % 53
         decypt += alphabet[pastLetters]
     return decypt
 
-print (decrypt("cbcqdphclvcckulvwrskhu"))
+print (decrypt("n BPCOGBKUBdJTKUVQRJGT"))
