@@ -42,13 +42,42 @@ print(encryptMessage())
 def cesarEncrypt():
     input("Message:")
     if "a" :print("c")
-    :
-        if "b" :print("f")
-        else:
-            if "c" :print("e")
-            else:
-                if "b" :print("f")
-                else:
-                    if "c" :print("g")
+    if "b" :print("f")
+    if "c" :print("e")
+    if "b" :print("f")
+    if "c" :print("g")
 
 print(cesarEncrypt())
+
+
+def cesarCipher(val):
+    input("Message:")
+    Encryption = ""
+    for E in val:
+        num = ord(E)
+
+        if num == 122:
+            newnum = 97
+        elif num == 90:
+            newnum = 65
+        else:
+            newnum = num + 1
+
+        Encryption = Encryption + chr(newnum)
+
+    return Encryption
+
+print(cesarCipher('10'))
+
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+def cesar(word):
+    encoded = ""
+    for ch in word:
+        index = alphabet.find(ch)
+        nextIndex = (index + 3) % 26
+        encoded += alphabet[nextIndex]
+    return encoded
+
+print(cesar("hello"))
