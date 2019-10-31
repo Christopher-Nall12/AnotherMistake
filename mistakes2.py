@@ -50,34 +50,28 @@ def cesarEncrypt():
 print(cesarEncrypt())
 
 
-def cesarCipher(val):
-    input("Message:")
-    Encryption = ""
-    for E in val:
-        num = ord(E)
-
-        if num == 122:
-            newnum = 97
-        elif num == 90:
-            newnum = 65
-        else:
-            newnum = num + 1
-
-        Encryption = Encryption + chr(newnum)
-
-    return Encryption
-
-print(cesarCipher('10'))
 
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 def cesar(word):
-    encoded = ""
+    encypt = ""
     for ch in word:
-        index = alphabet.find(ch)
-        nextIndex = (index + 3) % 26
-        encoded += alphabet[nextIndex]
-    return encoded
+        Letters = alphabet.find(ch)
+        nextLetters = (Letters + 3) % 26
+        encypt += alphabet[nextLetters]
+    return encypt
 
 print(cesar("hello"))
+print(cesar("WHy oh WHy"))
+print(cesar("My name is Christopher"))
+
+def decrypt(encypt):
+    decypt = ""
+    for ch in encypt:
+        Letters = alphabet.find(ch)
+        pastLetters = (Letters -3) % 26
+        decypt += alphabet[pastLetters]
+    return decypt
+
+print (decrypt("cbcqdphclvcckulvwrskhu"))
