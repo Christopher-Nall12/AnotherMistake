@@ -63,16 +63,15 @@ if "y" not in name:
 
 
 # Method     Use example      Explanation
-# Center
-# ljust
-# rjust
-# upper
-# lower
-# index
-# rindex
-# find
-# rfind
-# replace
+# Center    aStr.center(w)     Find the center point of whatever you put into the parenthesis with the (w) being a word or phrase.
+# ljust     aStr.ljust(w)      It returns the string left of its justified length/width.
+# rjust     aStr.rjust(w)      It returns the string right of its justified length/width.
+# upper     aStr.upper()       Converts all lowercase letters into capitals.
+# lower     aStr.lower()       Converts all capital letters into lowercase.
+# index     aStr.index(item)   It searches for a given element from the list that you give it.
+# rindex    aStr.rindex(item)  It searches for the highest index then returns it.
+# find      aStr.find(item)    It is used to find an (Item) that you tell it to
+# rfind     aStr.rfind(item)   It finds the highest index and does the same as the find string.
 
 Mine = "not yours"
 notYours = " mine"
